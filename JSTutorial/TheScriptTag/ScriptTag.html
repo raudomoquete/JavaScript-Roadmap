@@ -1,0 +1,66 @@
+<!--In HTML, JavaScript code is inserted between <script> and </script> tags-->
+<!--A JavaScript function is a block of JavaScript code, that can be executed when "called" for.
+For example, a function can be called when an event occurs, like when the user clicks a button.-->
+<!--JavaScript in <head>-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function myFunction() {
+                document.getElementById("demo").innerHTML = "Paragraph changed.";
+            }
+        </script>
+    </head>
+    <body>
+
+        <h2>
+            Demo JavaScript in Head
+        </h2>
+
+        <p id="demo">A paragraph</p>
+        <button type="button" onclick="myFunction()">Try it</button>
+
+
+        <!--JavaScript in <body>-->
+        <!--In this example, a JavaScript function is placed in the <body> section of an HTML page.
+        The function is invoked (called) when a button is clicked:-->
+        <h2>Demo JavaScript Function in Body</h2>
+
+        <p id="bodydemo">A Paragraph</p>
+
+        <button type="button" onclick="mybodyFunction()">Try this one also</button>
+
+        <script>
+            function mybodyFunction(){
+                document.getElementById("bodydemo").innerHTML = "Paragraph changed!.";
+            }
+        </script>
+
+        <!--Scripts can also be placed in external files
+            JavaScript files have the file extension .js.
+            To use an external script, put the name of the script file in the src (source) attribute of a <script> tag:-->
+        <!--<script src="myScript.js"></script>-->
+        <h2>Demo External JavaScript Function</h2>
+
+        <p id="externaldemo">A Paragraph.</p>
+
+        <button type="button" onclick="myexternalFunction()">Try this external function</button>
+
+        <p>This example links to "myScript.js".</p>
+        <p>(myFunction is stored in "myScript.js")</p>
+
+        <script src="myScript.js"></script>
+        <!--
+            An external script can be referenced in 3 different ways:
+
+            With a full URL (a full web address)
+            With a file path (like /js/)
+            Without any path
+        -->
+
+    </body>
+</html>
+
+
+        
+      
