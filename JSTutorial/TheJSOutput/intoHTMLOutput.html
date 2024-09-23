@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h2>My First Web Page</h2>
+        <p>My First Paragraph.</p>
+
+        <p>Never call document.write after the document has finished loading
+            ir will overwrite the whole document.</p>
+
+        <script>
+            document.write(5 + 6);
+        </script>  
+        
+        <!-- Simulando una llamada a document.write después de que la página ha cargado (no hacer esto) -->
+     <!--    <script>
+            // Simulando una llamada a document.write después de que la página ha cargado
+            window.onload = function() {
+                document.write("This will overwrite the entire document!");
+            };
+        </script>  -->
+
+        <!--En lugar de usar document.write, es mejor manipular el DOM (Document Object Model) usando métodos como innerHTML, appendChild, o createElement.
+             Aquí tienes un ejemplo de cómo agregar contenido de manera segura: -->
+      <!--        <script>
+                window.onload = function() {
+                    var newParagraph = document.createElement("p");
+                    newParagraph.textContent = "This is a new paragraph added safely.";
+                    document.body.appendChild(newParagraph);
+                };
+            </script> ver ejemplo en intoHTMLElement.html-->
+
+    </body>
+</html>
